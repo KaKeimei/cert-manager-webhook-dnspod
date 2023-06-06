@@ -17,7 +17,7 @@ import (
 	cmmeta "github.com/jetstack/cert-manager/pkg/apis/meta/v1"
 	"github.com/jetstack/cert-manager/pkg/issuer/acme/dns/util"
 
-	"github.com/qqshfox/dnspod-go"
+	"github.com/KaKeimei/dnspod-go"
 )
 
 const (
