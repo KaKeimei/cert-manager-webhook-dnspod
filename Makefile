@@ -1,4 +1,4 @@
-IMAGE_NAME := "qqshfox/cert-manager-webhook-dnspod"
+IMAGE_NAME := "jpccr.ccs.tencentyun.com/okj-k8s/cert-manager-webhook-dnspod"
 IMAGE_TAG := "latest"
 
 OUT := $(shell pwd)/_out
@@ -9,7 +9,7 @@ verify:
 	go test -v .
 
 build:
-	docker build -t "$(IMAGE_NAME):$(IMAGE_TAG)" .
+	docker build --platform linux/amd64 -t "$(IMAGE_NAME):$(IMAGE_TAG)" .
 
 push:
 	docker push "$(IMAGE_NAME):$(IMAGE_TAG)"
